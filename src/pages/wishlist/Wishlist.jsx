@@ -1,11 +1,16 @@
-import React from 'react'
+import Products from "@/components/products/Products";
+import { useStateValue } from "@/context/Index";
+import React from "react";
 
 const Wishlist = () => {
-  return (
-    <div >
-      <h2 className='text-center text-4xl'>wishlist</h2>
-    </div>
-  )
-}
+  let [data, dispatch] = useStateValue();
+  console.log(data.wishlist);
 
-export default Wishlist
+  return (
+    <div>
+      <Products title={"Wishlist"} data={data.wishlist} />
+    </div>
+  );
+};
+
+export default Wishlist;

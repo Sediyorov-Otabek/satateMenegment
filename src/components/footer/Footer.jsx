@@ -1,48 +1,31 @@
 import React, { useReducer } from "react";
+import { Value } from "sass";
+// import { reduser, initialState } from "./Reduser";
 
-const initialState = {
-  son: 0,
-  strr: "whats ur name",
-  data: [],
-};
-const reduser = (state, action) => {
-  switch (action.type) {
-    case "INC":
-      return { ...state, son: state.son + action.payload };
-    case "DEC":
-      return { ...state, son: state.son - 1 };
-    case "NATION":
-      return { ...state, strr: (state.strr = payload) };
-    default:
-      return state;
-  }
-};
 const Footer = () => {
-  let [data, dispatch] = useReducer(reduser, initialState);
-  console.log(data.strr);
+  // let [data, dispatch] = useReducer(reduser, initialState);
+  // console.log(data.strr);
   return (
     <div className="w-full mt-12  bg-slate-200 p-5">
       <div className="container mx-auto flex items-center  ">
         <div className="footer__wrap w-full flex items-center justify-between gap-5  md:max-lg:flex-wrap   ">
-          <ul className="footer__collection flex md items-start justify-start flex-col w-96">
+          {/* <ul className="footer__collection flex md items-start justify-start flex-col w-96">
+            <p>{data.strr}</p>{" "}
+            <button
+              className="border hover:bg-red-500 rounded-xl px-2 py-1"
+              onClick={() => dispatch({ type: "NATION", laylo: "uzbek" })}
+            >
+              uzbek
+            </button>
+            <button
+              className="border hover:bg-red-500 rounded-xl px-2 py-1"
+              onClick={() => dispatch({ type: "NATION", laylo: "rus" })}
+            >
+              rus
+            </button>
             <b>
               {" "}
-              <p>{data.str}</p>{" "}
-              <i>
-                <select name="" id="">
-                  <option
-                    onClick={() =>
-                      dispatch({ type: "NATION", payload: "Uzbek" })
-                    }
-                    value=""
-                  >
-                    Uzbek
-                  </option>
-                  <option value="">english</option>
-                  <option value="">rus</option>
-                  <option value="">indian</option>
-                </select>
-              </i>
+              <i></i>
               {data.son}
             </b>
             <li className="footer__item">
@@ -70,7 +53,7 @@ const Footer = () => {
                 increment
               </button>
             </li>
-          </ul>
+          </ul> */}
           <ul className="footer__collection">
             <b>Меню</b>
             <li className="footer__item">

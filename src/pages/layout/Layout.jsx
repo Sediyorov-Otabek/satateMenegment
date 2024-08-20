@@ -1,19 +1,16 @@
-import Footer from "@/components/footer/Footer";
-import Header from "@/components/header/Header";
 import React from "react";
 import { Outlet } from "react-router-dom";
+import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
 
-const Layout = () => {
+const mainLayout = () => {
   return (
-    <div className="container mx-auto">
-      <h2>Layout</h2>
+    <>
       <Header />
-      <main>
-        <Outlet />
-      </main>
+      <Outlet />
       <Footer />
-    </div>
+    </>
   );
 };
 
-export default Layout;
+export default mainLayout;

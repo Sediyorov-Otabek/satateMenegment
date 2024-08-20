@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Context } from "./Home";
+// import { Context } from "./Home";
 
 const GrandChild = () => {
   const data = useContext(Context);
