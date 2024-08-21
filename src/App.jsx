@@ -3,7 +3,6 @@ import { Routes, Route } from "react-router-dom";
 import Wishlist from "@/pages/wishlist/Wishlist";
 import Login from "@/pages/login/Login";
 import Layotu from "@/pages/layout/Layout";
-import GrandChild from "./pages/home/GrandChild";
 import Cart from "./pages/cart/Cart";
 
 function App() {
