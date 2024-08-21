@@ -23,10 +23,18 @@ export const reducer = (state, action) => {
         };
       }
     case "CART":
-      return {
-        ...state,
-        cart: [...state.cart, action.payload],
-      };
+      let index = state.cart.findIndex((item) => item.id === action.payload.id);
+      if (index < 0) {
+        return {
+          ...state,
+          cart: [...state.cart, action.payload],
+        };
+      } else {
+        return {
+          ...state,
+          cart: state.cart.filter((item) => item.id !== action.payload.id),
+        };
+      }
     default:
       return state;
   }

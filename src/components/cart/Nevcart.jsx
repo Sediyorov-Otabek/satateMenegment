@@ -37,10 +37,7 @@ const Newcart = ({ data, title }) => {
           className="border py-1 w-[140px] font-[500] bg-slate-400"
           onClick={() => dispatch({ type: "CART", payload: product })}
         >
-          Add cart
-        </button>
-        <button className=" py-1 w-[140px] font-[500] text-red-500 bg-stone-300">
-          Delete
+          delete
         </button>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import Newcart from "@/components/cart/Nevcart";
+import Nevcart from "@/components/cart/Nevcart";
 import { useStateValue } from "@/context/Index";
 import React from "react";
 
@@ -8,7 +8,7 @@ const Cart = () => {
 
   return (
     <div>
-      <Newcart data={data.cart} />
+      <Nevcart data={data.cart} />
     </div>
   );
 };

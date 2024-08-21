@@ -33,7 +33,6 @@ const Products = ({ data, title }) => {
         <button
           className="border bg-slate-400 py-1 text-[#fff] "
           onClick={() => {
-            navigate(`/Cart`);
             dispatch({ type: "CART", payload: product });
           }}
         >
